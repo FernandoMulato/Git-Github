@@ -3,7 +3,10 @@ Fundamentals of Git &amp; Github
 
 ### Para ver que version tenemos de git y/o tener ayuda:
 
-- git -v, git --version, git -h, git --help
+- git -v
+- git --version
+- git -h
+- git --help
 
 ### Comandos básicos de la terminal
 
