@@ -25,7 +25,7 @@ Fundamentals of Git &amp; Github
 
 ### git init
 
-- New-Item -Path "hello_git.py" -ItemType File : crea fichero de cualquier tipo .py, .java, etc
+- New-Item -Path "hello_git.py" -ItemType File: crea fichero de cualquier tipo .py, .java, etc
 - git init: Indica que queremos trabajar con git.
 
 ### Ramas en Git
@@ -51,13 +51,23 @@ Fundamentals of Git &amp; Github
 
 - git checkout nombreFichero.example: para situarse en un punto de los cambios. Es como un rollback donde no he guardado
 - git checkout .: todos los ficheros.
-- git reset: resetea el archivo.
+- git reset: resetea el archivo sin importar lo que se hizo despues.
 
 ### git alias
 
 - git config --global alias.tree "log --graph --decorate --all --oneline": da un alias para un comando para ser más rapido (en este caso tree es el alias).
 - git tree: acceder a ese alias
 
+### gitignore
 
+- New-Item -Path ".gitignore" -ItemType File: crea el archivo necesario para poder ingnorar ficheros.
 
+### giti diff
 
+- git diff: ver que se ha modificado, sin haber guardado.
+
+### Desplazamiento 
+
+- git checkout idCopia: para moverse en los cambios del proyecto
+
+### git reset hard y reflog
