@@ -25,6 +25,11 @@ Fundamentals of Git &amp; Github
 - New-Item -Path "hello_git.py" -ItemType File : crea fichero de cualquier tipo .py, .java, etc
 - git init: Indica que queremos trabajar con git.
 
+### Ramas en Git
+
+- git branch -m main: cambia de master a main.
+- git config --global init.defaultBranch <name>: configuaración para cambiar el nombre por defecto de la rama principal
+
 
 
 
