@@ -32,9 +32,23 @@ Fundamentals of Git &amp; Github
 
 ### git add y commit
 
-- git status: muestra el estado de los archivos
 - git add nombrefichero.example : agrega un fichero en especifico.
+- git add . : agraga todos los ficheros.
+- git commit -m "comentario": se sube el cambio al repositorio de git.
 
+### git log y status
+
+- git status: muestra el estado de los archivos
+- git log: muestra la información de los commits.
+- git log --graph: mas visual.
+- git log --graph --pretty=oneline: muestra solo los mensajes.
+- git log --graph --decorate --all --oneline: recorta el id.
+
+### git checkout y reset
+
+- git checkout nombreFichero.example: para situarse en un punto de los cambios. Es como un rollback donde no he guardado
+- git checkout .: todos los ficheros.
+- git reset: resetea el archivo.   
 
 
 
