@@ -18,7 +18,7 @@ Fundamentals of Git &amp; Github
 ### Configuración de Git
 
 - git config --global user.name "nombreUsuario" 
-- git config --global user.email "correo@gmail.com"
+- git config --global user.email "correo@example.com"
 
 ### git init
 
@@ -48,8 +48,12 @@ Fundamentals of Git &amp; Github
 
 - git checkout nombreFichero.example: para situarse en un punto de los cambios. Es como un rollback donde no he guardado
 - git checkout .: todos los ficheros.
-- git reset: resetea el archivo.   
+- git reset: resetea el archivo.
 
+### git alias
+
+- git config --global alias.tree "log --graph --decorate --all --oneline": da un alias para un comando para ser más rapido (en este caso tree es el alias).
+- git tree: acceder a ese alias
 
 
 
