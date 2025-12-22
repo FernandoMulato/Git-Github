@@ -20,6 +20,12 @@ Fundamentals of Git &amp; Github
 - git config --global user.name "nombreUsuario" 
 - git config --global user.email "correo@gmail.com"
 
+### git init
+
+- New-Item -Path "hello_git.py" -ItemType File : crea fichero de cualquier tipo .py, .java, etc
+
+
+
 
 
 
