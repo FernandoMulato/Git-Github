@@ -23,6 +23,7 @@ Fundamentals of Git &amp; Github
 ### git init
 
 - New-Item -Path "hello_git.py" -ItemType File : crea fichero de cualquier tipo .py, .java, etc
+- git init: Indica que queremos trabajar con git.
 
 
 
