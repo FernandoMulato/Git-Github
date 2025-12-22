@@ -15,7 +15,11 @@ Fundamentals of Git &amp; Github
 - mkdir "nombre de la carpeta": para crear una carpeta
 - code .: abre carpeta con visual studio code si este se encuentra instalado
 
-### Configuración de git
+### Configuración de Git
+
+- git config --global user.name "nombreUsuario" 
+- git config --global user.email "correo@gmail.com"
+
 
 
 
