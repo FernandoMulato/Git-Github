@@ -28,7 +28,12 @@ Fundamentals of Git &amp; Github
 ### Ramas en Git
 
 - git branch -m main: cambia de master a main.
-- git config --global init.defaultBranch <name>: configuaración para cambiar el nombre por defecto de la rama principal
+- git config --global init.defaultBranch "nombre": configuaración para cambiar el nombre por defecto de la rama principal
+
+### git add y commit
+
+- git status: muestra el estado de los archivos
+- git add nombrefichero.example : agrega un fichero en especifico.
 
 
 
