@@ -13,7 +13,9 @@ Fundamentals of Git &amp; Github
 - flechas: nos movemos en los comandos que ya hemos usado.
 - pwd: la ruta donde me encuentro.
 - mkdir "nombre de la carpeta": para crear una carpeta
-- code .: abre carpeta con visual studio code si este se encuentra instalado 
+- code .: abre carpeta con visual studio code si este se encuentra instalado
+
+### Configuración de git
 
 
 
