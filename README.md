@@ -71,3 +71,6 @@ Fundamentals of Git &amp; Github
 - git checkout idCopia: para moverse en los cambios del proyecto
 
 ### git reset hard y reflog
+
+- git reset --hard idCommit: va hacia un punto de la linea del tiempo, para atras o hacia adelante.
+- git reflog: muestra el historial completo.
