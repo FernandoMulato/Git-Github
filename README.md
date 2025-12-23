@@ -73,8 +73,14 @@ Fundamentals of Git &amp; Github
 ### git reset hard y reflog
 
 - git reset --hard idCommit: va hacia un punto de la linea del tiempo, para atras o hacia adelante.
-- git reflog: muestra el historial completo.
+- git reflog: muestra el historial completo. 
 
 ### git tag
 
-- git tag nombre_del_tag: para puntos importantes por ejemplo versiones de la app. Nos movemos a este lugar con checkout.
+- git tag nombre_del_tag: para puntos importantes por ejemplo versiones de la app. Nos movemos a este lugar con checkout (git checkout main para regresar donde estabamos).
+- git revert: borra un commit (peligroso)
+
+### git branch y switch
+
+- git branch nombre_rama: crea una nueva rama.
+- git switch nombre_rama: para movernos a otra rama.
