@@ -112,7 +112,10 @@ Fundamentals of Git &amp; Github
 
 - git branch -d nombre_rama: elimina la rama pero queda en memoria.
 
+## Github
 ### Introducción a Github
+
+Git funciona de manera local, por otro lado github funciona de manera remota.
 
 
 
