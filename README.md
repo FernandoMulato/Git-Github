@@ -1,6 +1,7 @@
 # Git-Github
 Fundamentals of Git &amp; Github
 
+## Git
 ### Para ver que version tenemos de git y/o tener ayuda:
 
 - git -v
