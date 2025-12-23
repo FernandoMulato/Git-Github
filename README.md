@@ -84,3 +84,19 @@ Fundamentals of Git &amp; Github
 
 - git branch nombre_rama: crea una nueva rama.
 - git switch nombre_rama: para movernos a otra rama.
+
+### git merge
+
+- git merge main: juntar con los cambios hechos en otra. rama (en este caso la principal)
+
+### Conflictos en git
+
+- Se elimina lo que no va en el editor, se agrega y se hace commit.
+
+### git stash
+
+-
+
+
+
+
