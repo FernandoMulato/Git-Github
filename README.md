@@ -49,7 +49,7 @@ Fundamentals of Git &amp; Github
 
 ### git checkout y reset
 
-- git checkout nombreFichero.example: para situarse en un punto de los cambios. Es como un rollback donde no he guardado
+- git checkout nombreFichero.example: para situarse en un punto de los cambios (mover el HEAD). Es como un rollback donde no he guardado
 - git checkout .: todos los ficheros.
 - git reset: resetea el archivo sin importar lo que se hizo despues.
 
@@ -102,6 +102,17 @@ Fundamentals of Git &amp; Github
 - git stash drop: borra los stash.
 
 ### Reintegración en git
+
+- se integra al main haciendo un switch haciendo:
+- git diff login: verificamos
+- git merge login; agregamos al main lo hecho en la rama login
+
+### Eliminación de ramas
+
+- git branch -d nombre_rama: elimina la rama pero queda en memoria.
+
+### Introducción a Github
+
 
 
 
