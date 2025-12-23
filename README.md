@@ -101,6 +101,8 @@ Fundamentals of Git &amp; Github
 - git stash pop: recupera lo que estabamos haciendo.
 - git stash drop: borra los stash.
 
+### Reintegración en git
+
 
 
 
