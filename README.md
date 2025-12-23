@@ -95,7 +95,11 @@ Fundamentals of Git &amp; Github
 
 ### git stash
 
--
+- cuando tenemos que salir de emergencia a otra rama, y tenemos codigo con errores.
+- git stash: commit temporal y no afecta el arbol.
+- git stash list: muestra lo que est pendiente.
+- git stash pop: recupera lo que estabamos haciendo.
+- git stash drop: borra los stash.
 
 
 
