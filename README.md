@@ -74,3 +74,7 @@ Fundamentals of Git &amp; Github
 
 - git reset --hard idCommit: va hacia un punto de la linea del tiempo, para atras o hacia adelante.
 - git reflog: muestra el historial completo.
+
+### git tag
+
+- git tag nombre_del_tag: para puntos importantes por ejemplo versiones de la app. Nos movemos a este lugar con checkout.
