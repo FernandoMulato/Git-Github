@@ -134,7 +134,7 @@ Buscar en documentación
 
 - `git fetch`: descarga el historial de cambios sin descargar los cambios.
 - `git pull origin nombreDeRama`: descarga el historial y los cambios.
-- `git config`
+- `git config pull.rebase false`: configuración para que el pull se haga con merge.
 
 ## Enlaces de interés
 
