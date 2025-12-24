@@ -154,7 +154,8 @@ Se agrega la llave publica a github en settings
 
 ### Git push
 
--
+- `git push --set-upstream origin main`: configura o sincroniza el main para poder usar git push y git pull.
+
 
 ## Enlaces de interés
 
