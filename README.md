@@ -117,6 +117,26 @@ Fundamentals of Git &amp; Github
 
 Git funciona de manera local, por otro lado github funciona de manera remota.
 
+### Autentificación SSH
+
+Buscar en documentación
+
+## Enlaces de interés
+
+- [Web](https://git-scm.com) oficial Git (Documentación, descarga...)
+- [Libro](https://git-scm.com/book/es/v2) de Git en Español (Gratis)
+- ¿Con qué herramientas estoy trabajando?: [iTerm](https://iterm2.com/) con [Oh My Zsh](https://ohmyz.sh/), [VSCode](https://code.visualstudio.com/), [Miro](https://miro.com/)
+- [Guía](https://training.github.com/downloads/es_ES/github-git-cheat-sheet/) con comandos de Git más utilizados
+- [Web](https://github.com) oficial GitHub
+- [Documentación](https://docs.github.com/es) de GitHub
+- [Configuración](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/about-ssh) SSH para GitHub
+- [Markdown](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+- Herramientas gráficas para Git y GitHub: [GitHub Desktop](https://desktop.github.com), [GitKraken](https://gitkraken.com), [Sourcetree](https://sourcetreeapp.com), [Fork](https://git-fork.com)
+- [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+- [GitHub Pages](https://pages.github.com/)
+- [GitHub Actions](https://github.com/features/actions)
+
+
 
 
 
