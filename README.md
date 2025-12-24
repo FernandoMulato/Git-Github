@@ -121,6 +121,12 @@ Git funciona de manera local, por otro lado github funciona de manera remota.
 
 Buscar en documentación
 
+### Git remote
+
+- git remote add origin direccionDelRepositorio.git: agrega el repositorio remoto.
+- git push -u origin nombre_rama: sube los archivos locales a github
+
+
 ## Enlaces de interés
 
 - [Web](https://git-scm.com) oficial Git (Documentación, descarga...)
