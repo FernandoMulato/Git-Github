@@ -123,9 +123,17 @@ Buscar en documentación
 
 ### Git remote
 
-- git remote add origin direccionDelRepositorio.git: agrega el repositorio remoto.
-- git push -u origin nombre_rama: sube los archivos locales a github
+- `git remote add origin direccionDelRepositorio.git`: agrega el repositorio remoto.
+- `git push -u origin nombre_rama`: sincroniza y sube los archivos locales a github.
 
+### Subida proyecto
+
+- `git push`: sube los archivos al repositorio siempre y cuando se este sincronizado con lo que hay arriba.
+
+### Git fetch y pull
+
+- `git fetch`: descarga el historial de cambios sin descargar los cambios.
+- `git pull origin nombreDeRama`: descarga el historial y los cambios
 
 ## Enlaces de interés
 
