@@ -133,7 +133,8 @@ Buscar en documentación
 ### Git fetch y pull
 
 - `git fetch`: descarga el historial de cambios sin descargar los cambios.
-- `git pull origin nombreDeRama`: descarga el historial y los cambios
+- `git pull origin nombreDeRama`: descarga el historial y los cambios.
+- `git config`
 
 ## Enlaces de interés
 
