@@ -150,7 +150,11 @@ Se agrega la llave publica a github en settings
 
 ### Git clone
 
-- 
+- `git clone urlSSH_proyecto`: se copia en url ya sea HTTPS, SSH o GitHub Cli y clona el repo.
+
+### Git push
+
+-
 
 ## Enlaces de interés
 
