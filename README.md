@@ -119,7 +119,19 @@ Git funciona de manera local, por otro lado github funciona de manera remota.
 
 ### Autentificación SSH
 
-Buscar en documentación
+Revisar documentación ya que esto puede cambiar.
+
+En Git Bash:
+- `ls -al ~/.ssh`: vemos las lista de llaves SSH. Si no existe se crea la carpeta .ssh.
+- `ssh-keygen -t ed25519 -C "your_email@example.com"`: crea una clave publica y otra privada.
+
+Agrega clave al agente en powershell (administrador):
+- `Get-Service -Name ssh-agent | Set-Service -StartupType Manual`
+- `Start-Service ssh-agent`
+Powershell sin permisos elevados:
+- `ssh-add c:/Users/YOU/.ssh/id_ed25519`
+Se agrega la llave publica a github en settings
+- `ssh -T git@github.com`: verificamos en git bash y damos yes, y escribimos nuevamente el script.
 
 ### Git remote
 
@@ -128,13 +140,17 @@ Buscar en documentación
 
 ### Subida proyecto
 
-- `git push`: sube los archivos al repositorio siempre y cuando se este sincronizado con lo que hay arriba.
+- `git push origin nombre_rama`: sube los archivos al repositorio siempre y cuando se este sincronizado con lo que hay arriba.
 
 ### Git fetch y pull
 
 - `git fetch`: descarga el historial de cambios sin descargar los cambios.
 - `git pull origin nombreDeRama`: descarga el historial y los cambios.
 - `git config pull.rebase false`: configuración para que el pull se haga con merge.
+
+### Git clone
+
+- 
 
 ## Enlaces de interés
 
