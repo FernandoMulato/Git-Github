@@ -1,242 +1,236 @@
-# Git-Github
-Fundamentals of Git &amp; Github
+# Git–GitHub  
+Fundamentals of Git & GitHub
 
 ## Git
-### Para ver que version tenemos de git y/o tener ayuda:
+### Check the Git version and get help
 
 - `git -v`
 - `git --version`
 - `git -h`
 - `git --help`
 
-### Comandos Básicos de la Terminal
+### Basic Terminal Commands
 
-- `ls`: listados de todos los directorios que hay en el espacio actual.
-- `cd`: para movernos hacia donde queremos (con tabulación o escribiendo directaqmente el nombre).
-- `cd..`: volver hacia atras.
-- flechas: nos movemos en los comandos que ya hemos usado.
-- `pwd`: la ruta donde me encuentro.
-- `mkdir` "nombre de la carpeta": para crear una carpeta
-- `code .`: abre carpeta con visual studio code si este se encuentra instalado
+- `ls`: lists all directories in the current workspace.
+- `cd`: moves to the desired directory (using tab completion or typing the name directly).
+- `cd ..`: go back one level.
+- arrow keys: navigate through previously used commands.
+- `pwd`: shows the current path.
+- `mkdir "folder_name"`: creates a folder.
+- `code .`: opens the folder in Visual Studio Code if installed.
 
-### Configuración de Git
+### Git Configuration
 
-- `git config --global user.name "nombreUsuario"`
-- `git config --global user.email "correo@example.com"`
+- `git config --global user.name "userName"`
+- `git config --global user.email "email@example.com"`
 
 ### Git init
 
-- `New-Item -Path "hello_git.py" -ItemType File`: crea fichero de cualquier tipo .py, .java, etc
-- `git init`: Indica que queremos trabajar con git.
+- `New-Item -Path "hello_git.py" -ItemType File`: creates a file of any type (.py, .java, etc.).
+- `git init`: indicates that we want to work with Git.
 
-### Ramas en Git
+### Branches in Git
 
-- `git branch -m main`: cambia de master a main.
-- `git config --global init.defaultBranch "nombre"`: configuaración para cambiar el nombre por defecto de la rama principal
+- `git branch -m main`: renames the branch from master to main.
+- `git config --global init.defaultBranch "branch_name"`: configuration to change the default name of the main branch.
 
-### Git add y commit
+### Git add and commit
 
-- `git add nombrefichero.example`: agrega un fichero en especifico.
-- `git add .`: agraga todos los ficheros.
-- `git commit -m "comentario"`: se sube el cambio al repositorio de git.
+- `git add file_name.example`: adds a specific file.
+- `git add .`: adds all files.
+- `git commit -m "comment"`: saves the changes to the Git repository.
 
-### Git log y status
+### Git log and status
 
-- `git status`: muestra el estado de los archivos
-- `git log`: muestra la información de los commits.
-- `git log --graph`: mas visual.
-- `git log --graph --pretty=oneline`: muestra solo los mensajes.
-- `git log --graph --decorate --all --oneline`: recorta el id.
+- `git status`: shows the status of files.
+- `git log`: shows commit information.
+- `git log --graph`: more visual representation.
+- `git log --graph --pretty=oneline`: shows only commit messages.
+- `git log --graph --decorate --all --oneline`: shortens the commit ID.
 
-### Git checkout y reset
+### Git checkout and reset
 
-- `git checkout nombreFichero.example`: para situarse en un punto de los cambios (mover el HEAD). Es como un rollback donde no he guardado
-- `git checkout .`: todos los ficheros.
-- `git reset`: resetea el archivo sin importar lo que se hizo despues.
+- `git checkout file_name.example`: moves to a specific point in the changes (moves HEAD). Similar to a rollback without saving.
+- `git checkout .`: applies to all files.
+- `git reset`: resets the file regardless of what was done afterward.
 
 ### Git alias
 
-- `git config --global alias.tree "log --graph --decorate --all --oneline"`: da un alias para un comando para ser más rapido (en este caso tree es el alias).
-- `git tree`: acceder a ese alias
+- `git config --global alias.tree "log --graph --decorate --all --oneline"`: creates an alias for a command to make it faster (tree is the alias).
+- `git tree`: runs the alias.
 
 ### Gitignore
 
-- `New-Item -Path ".gitignore" -ItemType File`: crea el archivo necesario para poder ingnorar ficheros.
+- `New-Item -Path ".gitignore" -ItemType File`: creates the file needed to ignore files.
 
 ### Git diff
 
-- `git diff`: ver que se ha modificado, sin haber guardado.
+- `git diff`: shows what has been modified without saving.
 
-### Desplazamiento 
+### Navigation
 
-- `git checkout idCopia`: para moverse en los cambios del proyecto
+- `git checkout commit_id`: moves through the project changes.
 
-### Git reset hard y reflog
+### Git reset hard and reflog
 
-- `git reset --hard idCommit`: va hacia un punto de la linea del tiempo, para atras o hacia adelante.
-- `git reflog`: muestra el historial completo. 
+- `git reset --hard commit_id`: moves to a specific point in the timeline, backward or forward.
+- `git reflog`: shows the complete history.
 
 ### Git tag
 
-- `git tag nombre_del_tag`: para puntos importantes por ejemplo versiones de la app. Nos movemos a este lugar con checkout (git checkout main para regresar donde estabamos).
-- `git revert`: borra un commit (peligroso)
+- `git tag tag_name`: marks important points such as app versions. You can move to it using checkout (`git checkout main` to return).
+- `git revert`: deletes a commit (dangerous).
 
-### Git branch y switch
+### Git branch and switch
 
-- `git branch nombre_rama`: crea una nueva rama.
-- `git switch nombre_rama`: para movernos a otra rama.
+- `git branch branch_name`: creates a new branch.
+- `git switch branch_name`: switches to another branch.
 
 ### Git merge
 
-- `git merge main`: juntar con los cambios hechos en otra. rama (en este caso la principal)
+- `git merge main`: merges changes from another branch into the current one (in this case, the main branch).
 
-### Conflictos en git
+### Git conflicts
 
-- Se elimina lo que no va en el editor, se agrega y se hace commit.
+- Remove unnecessary code in the editor, then add and commit the changes.
 
 ### Git stash
 
-- cuando tenemos que salir de emergencia a otra rama, y tenemos codigo con errores.
-- `git stash`: commit temporal y no afecta el arbol.
-- `git stash list`: muestra lo que est pendiente.
-- `git stash pop`: recupera lo que estabamos haciendo.
-- `git stash drop`: borra los stash.
+- Used when you must urgently switch branches and have code with errors.
+- `git stash`: temporary commit that does not affect the tree.
+- `git stash list`: shows pending stashes.
+- `git stash pop`: restores the previous work.
+- `git stash drop`: deletes the stash.
 
-### Reintegración en git
+### Reintegration in Git
 
-- se integra al main haciendo un switch haciendo:
-- `git diff login`: verificamos
-- `git merge login`; agregamos al main lo hecho en la rama login
+- Reintegrate into main by switching:
+- `git diff login`: verify changes.
+- `git merge login`: merge the login branch into main.
 
-### Eliminación de ramas
+### Branch deletion
 
-- `git branch -d nombre_rama`: elimina la rama pero queda en memoria.
+- `git branch -d branch_name`: deletes the branch but keeps it in memory.
 
-## Github
-### Introducción a Github
+## GitHub
+### Introduction to GitHub
 
-Git funciona de manera local, por otro lado github funciona de manera remota.
+Git works locally, while GitHub works remotely.
 
-### Autentificación SSH
+### SSH Authentication
 
-Revisar documentación ya que esto puede cambiar.
+Check the documentation, as this may change.
 
-En Git Bash:
-- `ls -al ~/.ssh`: vemos las lista de llaves SSH. Si no existe se crea la carpeta .ssh.
-- `ssh-keygen -t ed25519 -C "your_email@example.com"`: crea una clave publica y otra privada.
+In Git Bash:
+- `ls -al ~/.ssh`: lists SSH keys. If it does not exist, the `.ssh` folder is created.
+- `ssh-keygen -t ed25519 -C "your_email@example.com"`: creates a public and private key.
 
-Agrega clave al agente en powershell (administrador):
+Add the key to the agent in PowerShell (administrator):
 - `Get-Service -Name ssh-agent | Set-Service -StartupType Manual`
 - `Start-Service ssh-agent`
-Powershell sin permisos elevados:
+
+PowerShell without elevated permissions:
 - `ssh-add c:/Users/YOU/.ssh/id_ed25519`
-Se agrega la llave publica a github en settings
-- `ssh -T git@github.com`: verificamos en git bash y damos yes, y escribimos nuevamente el script.
+
+Add the public key to GitHub in settings.
+- `ssh -T git@github.com`: verify in Git Bash, type yes, and run again.
 
 ### Git remote
 
-- `git remote add origin direccionDelRepositorio.git`: agrega el repositorio remoto.
-- `git push -u origin nombre_rama`: sincroniza y sube los archivos locales a github.
+- `git remote add origin repository_url.git`: adds the remote repository.
+- `git push -u origin branch_name`: syncs and uploads local files to GitHub.
 
-### Subida proyecto
+### Project upload
 
-- `git push origin nombre_rama`: sube los archivos al repositorio siempre y cuando se este sincronizado con lo que hay arriba.
+- `git push origin branch_name`: uploads files to the repository if synchronized.
 
-### Git fetch y pull
+### Git fetch and pull
 
-- `git fetch`: descarga el historial de cambios sin descargar los cambios.
-- `git pull origin nombreDeRama`: descarga el historial y los cambios.
-- `git config pull.rebase false`: configuración para que el pull se haga con merge.
+- `git fetch`: downloads the change history without applying changes.
+- `git pull origin branch_name`: downloads history and changes.
+- `git config pull.rebase false`: configures pull to use merge.
 
 ### Git clone
 
-- `git clone urlSSH_proyecto`: se copia en url ya sea HTTPS, SSH o GitHub Cli y clona el repo.
+- `git clone ssh_project_url`: copies the repository using HTTPS, SSH, or GitHub CLI.
 
 ### Git push
 
-- `git push --set-upstream origin main`: configura o sincroniza el main para poder usar git push y git pull.
+- `git push --set-upstream origin main`: configures or syncs main to use git push and pull.
 
-### Github fork
+### GitHub fork
 
-Para clonar un repositorio que no es nuestro.
+Used to clone a repository that is not yours.
 
-### Flujo colaborativo
+### Collaborative workflow
 ### Pull request
 
-Al tener el repositorio clonado en nuestro Github atravez de un fork, realizamos los cambios necesarios, luego al hacer push vamos al repositorio en github y le damos en colaborar y hacemos un PR.
+When the repository is forked into your GitHub account, make changes and push them. Then go to GitHub, click collaborate, and create a PR.
 
-Si es en nuestro usuario donde llega el PR miramos en Pull request y se deja un comentario, se aprueba, o pedimos cambios. Para que se vea reflejado se debe dar en Merge pull request.
+If the PR arrives in your repository, review it under Pull Requests, leave comments, approve it, or request changes. To apply it, click **Merge pull request**.
 
-### Conflictos en PR
+### PR conflicts
 
-Se da en resolver conflictos a la PR, se soluciona, se marca como resuelto y se hace Commit merge.
+Click resolve conflicts in the PR, fix the issues, mark as resolved, and commit the merge.
 
-### Sincronización Fork
+### Fork synchronization
 
-Se sincroniza desde el repositorio clonado.
+Sync from the cloned repository.
 
-### Github Markdown
+### GitHub Markdown
 
-Es importante documentar github tiene documentación para markdown.
+Documentation is important; GitHub provides Markdown documentation.
 
-### Herramientas gráficas
+### Graphical tools
 
-Existe herramientas gráficas como:
+Graphical tools include:
 
-- Github Desktop.
-- gitkraken (recomendada).
-- sourcetree.
-- got-fork.
+- GitHub Desktop
+- GitKraken (recommended)
+- Sourcetree
+- Fork
 
-### Git & Github Flow
+### Git & GitHub Flow
 
-- La rama Main (Producción) es la rama que versiona, por ejemplo, v0.1, v0.2, etc
-- La rama Develop (QA) es donde llegan los demas equipos.
-- La ramas Feature es donde trabajan equipos (rama de login, rama de payment, etc).
-- La rama Release para verificar lo hecho en Develop y mandarlo a Main y cerrar en Develop.
-- La rama Bugfix si se encuentra un error en Release aqui se corrige.
-- La rama Hotflix para corregir errores en producción, se cierra en main y en Develop para tener todo sincronizado.
-- Investigar en documentación para estar actualizado.
+- The **Main** branch (Production) versions releases such as v0.1, v0.2, etc.
+- The **Develop** branch (QA) receives work from other teams.
+- **Feature** branches are where teams work (login branch, payment branch, etc.).
+- The **Release** branch verifies Develop and merges into Main, then closes Develop.
+- The **Bugfix** branch fixes issues found in Release.
+- The **Hotfix** branch fixes production issues and merges into Main and Develop.
+- Check documentation to stay updated.
 
-### Ejemplo gitflow
+### Gitflow example
 
-- `git flow version`: verificamos si tenemos git-flow, si no lo instalamos.
-- `git flow init`: para empezar a trabajar con git flow
-- Despues configuramos segun queremos o dejamos todo por defecto.
-- `git flow feature start nombre_rama_funcionalidad`: crea un nuevo feature.
-- `git flow feature finish nombre_rama_funcionalidad`: termina el feature.
-- `git flow release start nombre_release`: crea un nuevo release.
-- `git flow release finish nombre_release`: termina release.
-- Si estamos en un equipo de varias personas haciendo un featute, todas las mofificación hechas se deben hacer a travez de un PR.Igual mente a la hora de enviarlas a las otras ramas, donde sera el equipo de la feature donde hace un PR al equipo de la rama Develop. 
+- `git flow version`: checks if git-flow is installed.
+- `git flow init`: starts working with Git Flow.
+- Configure settings or leave defaults.
+- `git flow feature start feature_branch_name`: creates a new feature.
+- `git flow feature finish feature_branch_name`: finishes the feature.
+- `git flow release start release_name`: creates a release.
+- `git flow release finish release_name`: finishes the release.
+- In multi-person teams, all changes must go through a PR. The feature team submits a PR to the Develop branch team.
 
-### Git cherry-pick y rebase (delicados)
+### Git cherry-pick and rebase (delicate)
 
-- `git cherry-pick id_commit`, `git cherry-pick --continue`, `git cherry-pick --abort`: trae un commit al main.
-- `git rebase nombre_rama`, `git rebase --continue`, `git rebase --abort`: trae una rama a un punto concreto y modifica el historial.
+- `git cherry-pick commit_id`, `git cherry-pick --continue`, `git cherry-pick --abort`: brings a commit into main.
+- `git rebase branch_name`, `git rebase --continue`, `git rebase --abort`: rebases a branch and rewrites history.
 
-### Github pages y actions
+### GitHub Pages and Actions
 
-- Github pages: para crear páginas estaticas.
-- Actions: api para automatizar.
+- **GitHub Pages**: create static websites.
+- **Actions**: API for automation.
 
+## Useful Links
 
-## Enlaces de interés
-
-- [Web](https://git-scm.com) oficial Git (Documentación, descarga...)
-- [Libro](https://git-scm.com/book/es/v2) de Git en Español (Gratis)
-- ¿Con qué herramientas estoy trabajando?: [iTerm](https://iterm2.com/) con [Oh My Zsh](https://ohmyz.sh/), [VSCode](https://code.visualstudio.com/), [Miro](https://miro.com/)
-- [Guía](https://training.github.com/downloads/es_ES/github-git-cheat-sheet/) con comandos de Git más utilizados
-- [Web](https://github.com) oficial GitHub
-- [Documentación](https://docs.github.com/es) de GitHub
-- [Configuración](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/about-ssh) SSH para GitHub
-- [Markdown](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-- Herramientas gráficas para Git y GitHub: [GitHub Desktop](https://desktop.github.com), [GitKraken](https://gitkraken.com), [Sourcetree](https://sourcetreeapp.com), [Fork](https://git-fork.com)
+- [Official Git Website](https://git-scm.com)
+- [Git Book](https://git-scm.com/book/en/v2)
+- Tools: [iTerm](https://iterm2.com/) + [Oh My Zsh](https://ohmyz.sh/), [VS Code](https://code.visualstudio.com/), [Miro](https://miro.com/)
+- [Git Cheat Sheet](https://training.github.com/downloads/github-git-cheat-sheet/)
+- [GitHub](https://github.com)
+- [GitHub Docs](https://docs.github.com/en)
+- [SSH for GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/about-ssh)
+- [GitHub Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 - [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 - [GitHub Pages](https://pages.github.com/)
 - [GitHub Actions](https://github.com/features/actions)
-
-
-
-
-
-
