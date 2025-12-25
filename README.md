@@ -156,6 +156,24 @@ Se agrega la llave publica a github en settings
 
 - `git push --set-upstream origin main`: configura o sincroniza el main para poder usar git push y git pull.
 
+### Github fork
+
+Para clonar un repositorio que no es nuestro.
+
+### Flujo colaborativo
+### Pull request
+
+Al tener el repositorio clonado en nuestro Github atravez de un fork, realizamos los cambios necesarios, luego al hacer push vamos al repositorio en github y le damos en colaborar y hacemos un PR.
+
+Si es en nuestro usuario donde llega el PR miramos en Pull request y se deja un comentario, se aprueba, o pedimos cambios. Para que se vea reflejado se debe dar en Merge pull request.
+
+### Conflictos en PR
+
+Se da en resolver conflictos a la PR, se soluciona, se marca como resuelto y se hace Commit merge.
+
+### Sincronización Fork
+
+Se sincroniza desde el repositorio clonado.
 
 ## Enlaces de interés
 
