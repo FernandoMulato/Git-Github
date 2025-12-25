@@ -210,6 +210,10 @@ Graphical tools include:
 - `git flow release start release_name`: creates a release.
 - `git flow release finish release_name`: finishes the release.
 - In multi-person teams, all changes must go through a PR. The feature team submits a PR to the Develop branch team.
+- To add branches created by Git Flow to GitHub, use:
+    - `git push origin develop` (or `branch_name`)
+    - `git push origin feature/login`
+
 
 ### Git cherry-pick and rebase (delicate)
 
