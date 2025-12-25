@@ -177,6 +177,49 @@ Se sincroniza desde el repositorio clonado.
 
 ### Github Markdown
 
+Es importante documentar github tiene documentación para markdown.
+
+### Herramientas gráficas
+
+Existe herramientas gráficas como:
+
+- Github Desktop.
+- gitkraken (recomendada).
+- sourcetree.
+- got-fork.
+
+### Git & Github Flow
+
+- La rama Main (Producción) es la rama que versiona, por ejemplo, v0.1, v0.2, etc
+- La rama Develop (QA) es donde llegan los demas equipos.
+- La ramas Feature es donde trabajan equipos (rama de login, rama de payment, etc).
+- La rama Release para verificar lo hecho en Develop y mandarlo a Main y cerrar en Develop.
+- La rama Bugfix si se encuentra un error en Release aqui se corrige.
+- La rama Hotflix para corregir errores en producción, se cierra en main y en Develop para tener todo sincronizado.
+- Investigar en documentación para estar actualizado.
+
+### Ejemplo gitflow
+
+- `git flow version`: verificamos si tenemos git-flow, si no lo instalamos.
+- `git flow init`: para empezar a trabajar con git flow
+- Despues configuramos segun queremos o dejamos todo por defecto.
+- `git flow feature start nombre_rama_funcionalidad`: crea un nuevo feature.
+- `git flow feature finish nombre_rama_funcionalidad`: termina el feature.
+- `git flow release start nombre_release`: crea un nuevo release.
+- `git flow release finish nombre_release`: termina release.
+- Si estamos en un equipo de varias personas haciendo un featute, todas las mofificación hechas se deben hacer a travez de un PR.Igual mente a la hora de enviarlas a las otras ramas, donde sera el equipo de la feature donde hace un PR al equipo de la rama Develop. 
+
+### Git cherry-pick y rebase (delicados)
+
+- `git cherry-pick id_commit`, `git cherry-pick --continue`, `git cherry-pick --abort`: trae un commit al main.
+- `git rebase nombre_rama`, `git rebase --continue`, `git rebase --abort`: trae una rama a un punto concreto y modifica el historial.
+
+### Github pages y actions
+
+- Github pages: para crear páginas estaticas.
+- Actions: api para automatizar.
+
+
 ## Enlaces de interés
 
 - [Web](https://git-scm.com) oficial Git (Documentación, descarga...)
