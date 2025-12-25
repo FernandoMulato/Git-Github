@@ -175,6 +175,8 @@ Se da en resolver conflictos a la PR, se soluciona, se marca como resuelto y se 
 
 Se sincroniza desde el repositorio clonado.
 
+### Github Markdown
+
 ## Enlaces de interés
 
 - [Web](https://git-scm.com) oficial Git (Documentación, descarga...)
