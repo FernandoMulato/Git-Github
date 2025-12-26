@@ -213,6 +213,12 @@ Graphical tools include:
 - To add branches created by Git Flow to GitHub, use:
     - `git push origin develop` (or `branch_name`)
     - `git push origin feature/login`
+    - Important: 
+        - `git push -u origin feature/feature_name`: To be able to do a git push to the respective branch.
+        - `git push origin --delete feature/feature_name`: To remove the remote branch.
+        - `git branch -r`: To view remote branches.
+        - `git fetch --prune`: To clean local references of already deleted branches.
+
 
 
 ### Git cherry-pick and rebase (delicate)
