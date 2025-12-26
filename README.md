@@ -162,139 +162,7 @@ Add the public key to GitHub in settings.
 
 Used to clone a repository that is not yours.
 
-# Collaborative workflow
-
-## 🟢 MODEL 1 – Collaborators + Pull Requests (RECOMMENDED ⭐)
-
-👉 This is the professional standard.
-
-### 🔹 How it works
-
-- You create the repository.
-- You add team members as **Collaborators**.
-- Each member:
-  - Clones the repository.
-  - Creates their own `feature/*` branch.
-  - Pushes their feature branch.
-  - Opens a **Pull Request** to `develop`.
-- Another team member reviews and approves the PR.
-- The changes are merged.
-- The feature branch is deleted.
-
-### 🔹 Typical Permissions
-
-In GitHub:
-
-- **Write** → can create branches and Pull Requests.
-- **Maintain / Admin** → manage rules and repository settings.
-
-👀 **Important:**
-
-Even if they are collaborators, they **should NOT push directly** to `main` or `develop`.
-
-This is enforced using **branch protection rules** 👇
-
-## 🔐 Branch Protection (KEY)
-
-In **Settings → Branches**:
-
-For `main` and `develop`:
-
-- ✅ Require Pull Request before merging
-- ✅ Require at least one review
-- ✅ Block direct pushes
-- ❌ Do not allow force pushes
-
-👉 **Result:**
-
-- No one can break production.
-- All changes go through code review.
-
----
-
-## 🟡 MODEL 2 – Fork + Pull Request
-
-👉 Commonly used in **open source projects**.
-
-### 🔹 How it works
-
-- You do NOT add members as collaborators.
-- Each contributor:
-  - Creates a **fork** of the repository.
-  - Works on their own fork.
-  - Opens a Pull Request to your repository.
-
-### ❌ Disadvantages for closed teams
-
-- Slower workflow.
-- More friction.
-- Not necessary if you trust your team.
-
-## 🧩 So… How should features be handled in a team?
-
-### Ideal workflow using Git Flow + GitHub
-
-- `main` → production
-- `develop` → integration
-- `feature/*` → individual work
-
-### Each team member:
-
-```bash
-git checkout develop
-git pull
-git checkout -b feature/login
-```
-
-**Then:**
-
-```bash
-    git push -u origin feature/login
-```
-
-**After that:**
-
-- Pull Request: feature/login → develop
-
-- Code review
-
-- Merge
-
-- Delete branch
-
-### 🧠 Direct answer to the question
-
-Should I add them as collaborators, or should they clone the repo and make PRs?
-
-✅ Yes, add them as collaborators
-✅ Yes, they should clone the repository
-✅ Yes, they should work using feature branches
-✅ Yes, they should create Pull Requests
-
-👉 All of this together — it is not mutually exclusive.
-
-### 🏆 Final recommendation (for your project)
-
-Given that:
-
-- You are learning Git Flow
-
-- It is a team project
-
-- It is probably a university or semi-professional project
-
-👉 Use:
-
-- Collaborators
-
-- Mandatory Pull Requests
-
-- Branch protection on main and develop
-
-This is exactly how teams work in real companies 💼
-
-# Next
-
+### Collaborative workflow
 ### Pull request
 
 When the repository is forked into your GitHub account, make changes and push them. Then go to GitHub, click collaborate, and create a PR.
@@ -376,3 +244,134 @@ Graphical tools include:
 - [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 - [GitHub Pages](https://pages.github.com/)
 - [GitHub Actions](https://github.com/features/actions)
+
+## Collaborative workflow (RECOMMENDED)
+
+### 🟢 MODEL 1 – Collaborators + Pull Requests (RECOMMENDED ⭐)
+
+👉 This is the professional standard.
+
+#### 🔹 How it works
+
+- You create the repository.
+- You add team members as **Collaborators**.
+- Each member:
+  - Clones the repository.
+  - Creates their own `feature/*` branch.
+  - Pushes their feature branch.
+  - Opens a **Pull Request** to `develop`.
+- Another team member reviews and approves the PR.
+- The changes are merged.
+- The feature branch is deleted.
+
+#### 🔹 Typical Permissions
+
+In GitHub:
+
+- **Write** → can create branches and Pull Requests.
+- **Maintain / Admin** → manage rules and repository settings.
+
+👀 **Important:**
+
+Even if they are collaborators, they **should NOT push directly** to `main` or `develop`.
+
+This is enforced using **branch protection rules** 👇
+
+### 🔐 Branch Protection (KEY)
+
+In **Settings → Branches**:
+
+For `main` and `develop`:
+
+- ✅ Require Pull Request before merging
+- ✅ Require at least one review
+- ✅ Block direct pushes
+- ❌ Do not allow force pushes
+
+👉 **Result:**
+
+- No one can break production.
+- All changes go through code review.
+
+---
+
+### 🟡 MODEL 2 – Fork + Pull Request
+
+👉 Commonly used in **open source projects**.
+
+#### 🔹 How it works
+
+- You do NOT add members as collaborators.
+- Each contributor:
+  - Creates a **fork** of the repository.
+  - Works on their own fork.
+  - Opens a Pull Request to your repository.
+
+#### ❌ Disadvantages for closed teams
+
+- Slower workflow.
+- More friction.
+- Not necessary if you trust your team.
+
+### 🧩 So… How should features be handled in a team?
+
+#### Ideal workflow using Git Flow + GitHub
+
+- `main` → production
+- `develop` → integration
+- `feature/*` → individual work
+
+#### Each team member:
+
+```bash
+git checkout develop
+git pull
+git checkout -b feature/login
+```
+
+**Then:**
+
+```bash
+    git push -u origin feature/login
+```
+
+**After that:**
+
+- Pull Request: feature/login → develop
+
+- Code review
+
+- Merge
+
+- Delete branch
+
+#### 🧠 Direct answer to the question
+
+Should I add them as collaborators, or should they clone the repo and make PRs?
+
+✅ Yes, add them as collaborators
+✅ Yes, they should clone the repository
+✅ Yes, they should work using feature branches
+✅ Yes, they should create Pull Requests
+
+👉 All of this together — it is not mutually exclusive.
+
+#### 🏆 Final recommendation (for your project)
+
+Given that:
+
+- You are learning Git Flow
+
+- It is a team project
+
+- It is probably a university or semi-professional project
+
+👉 Use:
+
+- Collaborators
+
+- Mandatory Pull Requests
+
+- Branch protection on main and develop
+
+This is exactly how teams work in real companies 💼
